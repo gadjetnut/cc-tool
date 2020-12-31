@@ -18,3 +18,21 @@ from non-privileged accounts. Copy it to /etc/udev/rules.d
 
 #### Support:
 If you found a bug try to reproduce it with command line option --log.
+
+
+UBUNTU Install Steps:
+
+sudo apt-get install libusb-1.0.0-dev
+sudo apt-get install libusb-1.0.0
+sudo apt-get install libboost-all-dev
+sudo apt-get install pkg-config
+git clone https://github.com/gadjetnut/cc-tool.git
+cd cc-tool
+./bootstrap
+./configure
+make
+sudo make install
+
+usage:
+sudo cc-tool -v -e -w your_hex_file.hex
+
